@@ -1,18 +1,19 @@
-JAVA ESSENTIALS:
+# JAVA ESSENTIALS:
 
 This small project has examples of:
-1 - Encapsulation:
+
+1. **Encapsulation:**\
   It specifies that the fields of a class should be private and the method of the class should be public, to other classes to use.
 
-2 - Creating an instance:
+2. **Creating an instance:**\
   Creating an instance of a class, also known as an object, involves using the new keyword followed by the class's constructor.
   All classes in Java implicitly or explicitly inherit from the java.lang.Object.
   Static member and static methods.
 
-3 - Overloading:
+3. **Overloading:**\
   Multiple methods with the same signature but differ from parameter list.
 
-4 - Inheritance:
+4. **Inheritance:**\
   Java does not support multiple inheritances. But one parent class can have many child class.
   Promotes code reusability and scalability.
   Common properties and functionality can be written in one class.
@@ -20,38 +21,38 @@ This small project has examples of:
   Private methods and fields from the super class are not inherited.
   And all Final methods from the super class are inherited but cannot be overridden.
 
-5 - Overriding:
+5. **Overriding:**\
   Subclass overrides an implementation of a method that is already defined in its superclass maintaining the same
   method signature (name, parameters, and return type).
 
-6 - Polymorphism:
+6. **Polymorphism:**\
   An object can have a superclass type and a subclass instance.
   Sometimes an object needs to be cast. Casting converts an object's type into a different type.
 
-7 - Abstraction:
+7. **Abstraction:**\
   An abstract class cannot be instantiated. They are templates.
   Abstract classes are implemented by their subclasses. Abstract methods have no body. It is designed to be overridden by its subclass.
   If a subclass inherits from a abstract class, it must implement its abstracts methods OR the class itself must be declared as abstract.
 
-8 - Interfaces:
+8. **Interfaces:**\
   Cannot be instantiated; Do not have constructors; The value of the fields are final and cannot be changed;
   Other classes implement their methods. Uses the reserved word implements.
   Classes can implement multiple interfaces.
   Default methods within an interface contains a default implementation; This enables backward compatibility.
 
-9 - Data Structures:
+9. **Data Structures:**\
   Specific way of organizing and storing data, enabling efficient access and manipulation.
   Array
   Collections: Set, List, ArrayList, Queue, Map, Iterators
   Enhanced for loop
   forEach and lambdas
 
-10 - Streams:
+10. **Streams:**\
   Streams API Allows you to perform operations on the data without modifying the original source
   Intermediate operations perform the operation and return the resulting stream
   Terminal operations perform the operation and return a result and close the stream.
 
-11 - Exception Handling:
+11. **Exception Handling:**\
   Exception is an event that occurs at runtime that disrupts the normal flow of the program due to an error.
   checked exception: is verified by the compiler before the code is executed
   unchecked exception: not verified by the compiler. Ex. Runtime exceptions.
@@ -60,19 +61,19 @@ This small project has examples of:
   Finally block is executed even if an exception is thrown
   If the method has the potential to throw a checked exception, we must either catch the exception or  rethrow.
 
-12 - Strings class and its methods:
-  The String class has a set of built-in methods that you can use on strings. A few examples were used here to illustrate.
-  length(): Returns the number of characters in the string.
-  charAt(int index): Returns the character at the specified index.
-  equals(Object obj): Compares the string to the specified object.
-  toLowerCase() / toUpperCase(): Converts all characters in the string to lowercase or uppercase, respectively.
-  split(String regex): Splits the string into an array of strings based on a given regular expression delimiter.
-  matches(): checks whether a string matches a given regular expression.
+12. **String class and its methods:**\
+    The String class has a set of built-in methods that you can use on strings. A few examples were used here to illustrate.\
+    length(): Returns the number of characters in the string.\
+    charAt(int index): Returns the character at the specified index.\
+    equals(Object obj): Compares the string to the specified object.\
+    toLowerCase() / toUpperCase(): Converts all characters in the string to lowercase or uppercase, respectively.\
+    split(String regex): Splits the string into an array of strings based on a given regular expression delimiter.\
+    matches(): checks whether a string matches a given regular expression.\
 
-13 - Wrapper classes exist for all primitive data types.
+13. **Wrapper classes** exist for all primitive data types.
 
-14 - Type inference (var). It cannot be used outside the class for global variables.
+14. **Type inference (var).** It cannot be used outside the class for global variables.
 
-15 - ENUM is a special data type that represents a group of constants.
+15. **ENUM** is a special data type that represents a group of constants.
 
-16 - Switch statement x switch expression.
+16. **Switch statement x switch expression.**
