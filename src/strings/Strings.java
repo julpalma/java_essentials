@@ -23,13 +23,13 @@ public class Strings {
         }
     }
 
-    public static String reverseStringWithStringBuilder(String text) {
+    public static void reverseStringWithStringBuilder(String text) {
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < text.length(); i++) {
             stringBuilder.append(text.charAt(i));
             stringBuilder.reverse();
         }
-        return stringBuilder.toString();
+        System.out.println(stringBuilder.toString());
     }
 
     public static void toLowerCase(String text) {

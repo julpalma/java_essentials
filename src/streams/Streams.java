@@ -10,9 +10,6 @@ public class Streams {
     // Intermediate operations perform the operation and return the resulting stream
     // Terminal operations perform the operation and return a result and close the stream.
 
-    List<Integer> nums = Arrays.asList(10, 12, 14, 5, 16, 18, 20, 22, 52, 10, 12, 14);
-    List<String> numbers = Arrays.asList("10", "12", "14", "5", "16");
-
     public void createStreamAndPerformOperations() {
 
         List<String> vegetables = new ArrayList<>();

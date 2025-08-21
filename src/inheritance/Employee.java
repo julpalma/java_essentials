@@ -38,4 +38,8 @@ public class Employee extends Person {
 
     }
 
+    public void setTitle(Title title) {
+        this.title = title;
+    }
+
 }

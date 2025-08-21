@@ -24,7 +24,7 @@ public class Data_structures {
         for (String element : arr) {
             if (!numbers.add(element)) {
                 return false;
-            };
+            }
         }
         //All elements are unique
         return true;
