@@ -20,11 +20,14 @@ public class Main {
         room1.setWidth(25);
 
         double areaRoom1 = room1.calculateArea();
+        System.out.println("The area of the rectangle is " + areaRoom1);
 
         Rectangle room2 = new Rectangle(50, 25);
         double areaRoom2 = room2.calculateArea();
+        System.out.println("The area of the rectangle is " + areaRoom2);
 
         Rectangle kitchen = room2.getRoom();
+        System.out.println("Rectangle object " + kitchen);
 
         //Static member is accessed by the class's name.
         System.out.println(Rectangle.COLOR);
@@ -36,9 +39,14 @@ public class Main {
         // -------- Inheritance --------
 
         Employee employee = new Employee();
-        employee.getName();
+        employee.setEmployeeId("123");
+        employee.setSalary(70000);
+        employee.setPhone(456123789);
 
-        employee.setPhone(123456);
+        employee.setName("Mario Rocks");
+        employee.setAge(31);
+
+        System.out.println("Print the employee object created " + employee);
 
 
         // -------- Polymorphism --------
@@ -67,7 +75,7 @@ public class Main {
         // -------- Interfaces --------
 
         Product book = new Book();
-        book.setName("In the kitchen with H+ Sport");
+        book.setName("Hoe to boost health for longevity.");
 
 
     }

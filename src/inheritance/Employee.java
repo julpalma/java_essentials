@@ -9,7 +9,7 @@ public class Employee extends Person {
     //And all Final methods from the super class are inherited but cannot be overridden.
 
     private String employeeId;
-    private String salary;
+    private Integer salary;
     private Title title;
 
     public String getEmployeeId() {
@@ -20,11 +20,11 @@ public class Employee extends Person {
         this.employeeId = employeeId;
     }
 
-    public String getSalary() {
+    public Integer getSalary() {
         return salary;
     }
 
-    public void setSalary(String salary) {
+    public void setSalary(Integer salary) {
         this.salary = salary;
     }
 
@@ -37,4 +37,5 @@ public class Employee extends Person {
         return title.toString();
 
     }
+
 }

@@ -11,7 +11,7 @@ public class Person {
         return name;
     }
 
-    private void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -19,7 +19,7 @@ public class Person {
         return age;
     }
 
-    private void setAge(int age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
@@ -27,7 +27,8 @@ public class Person {
         return gender;
     }
 
-    private void setGender(String gender) {
+    //Can be improved and create a ENUM for gender
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
@@ -35,7 +36,7 @@ public class Person {
         return address;
     }
 
-    private void setAddress(String address) {
+    public void setAddress(String address) {
         this.address = address;
     }
 
