@@ -29,7 +29,7 @@ public class Strings {
             stringBuilder.append(text.charAt(i));
             stringBuilder.reverse();
         }
-        System.out.println(stringBuilder.toString());
+        System.out.println(stringBuilder);
     }
 
     public static void toLowerCase(String text) {
