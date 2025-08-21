@@ -1,4 +1,4 @@
-package dataTypes;
+package strings;
 
 public class Strings {
 
