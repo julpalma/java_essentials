@@ -1,5 +1,6 @@
 import abstraction.Shape;
 import abstraction.Triangle;
+import data_structures.Data_structures;
 import inheritance.Employee;
 import interfaces.Book;
 import interfaces.Product;
@@ -7,6 +8,8 @@ import objects.Rectangle;
 import polymorphism.Animal;
 import polymorphism.Cat;
 import polymorphism.Dog;
+import streams.Streams;
+import strings.Strings;
 
 public class Main {
     public static void main(String[] args) {
@@ -75,7 +78,46 @@ public class Main {
         // -------- Interfaces --------
 
         Product book = new Book();
-        book.setName("Hoe to boost health for longevity.");
+        book.setName("How to boost health for longevity.");
+
+        // -------- DATA STRUCTURES --------
+
+        // ARRAYS
+        //The length of an arrays is fixed once is defined and cannot be changed
+        String[] players = {"Bob", "Luke", "Chad", "Dan", "Henry", "Joe"};
+
+        Data_structures exercises = new Data_structures();
+
+        boolean elementFound = exercises.loopArraysAnfFindElement(players);
+        boolean elementsAreUnique = Data_structures.allElementsAreUnique(players);
+        System.out.println("Is element found in the array: " + elementFound);
+        System.out.println("All elements of the array are unique: " + elementsAreUnique);
+
+
+        // -------- STREAMS OPERATIONS --------
+
+        Streams streamsExamples = new Streams();
+
+        streamsExamples.createStreamAndPerformOperations();
+
+        streamsExamples.createNewMap();
+
+
+        // -------- STRINGS OPERATIONS --------
+
+        //Static methods can be called by the name of the class
+
+        String text = "Java essentials!!! Enjoy!!!";
+
+        Strings.countWords(text);
+        Strings.reverseString(text);
+        Strings.reverseStringWithStringBuilder(text);
+        Strings.toLowerCase(text);
+        Strings.hasSpecialChars(text);
+        Strings.isLetterFound(text);
+
+
+
 
 
     }

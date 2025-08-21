@@ -6,17 +6,29 @@ public class Data_structures {
 
     //------------------- ARRAYS ----------------------------
 
-    //The length of an arrays is fixed once is defined and cannot be changed
-    String[] players = {"Bob", "Luke", "Chad", "Dan", "Henry", "Joe"};
-    boolean playerFound;
-
-    public void loopArrays(String[] players) {
+    public boolean loopArraysAnfFindElement(String[] players) {
+        boolean elementFound = false;
         for (String player : players) {
             if (player.equals("Joe")) {
-                playerFound = true;
+                elementFound = true;
                 break;
             }
         }
+        return elementFound;
+    }
+
+    public static boolean allElementsAreUnique(String[] arr) {
+        //Use of HashSet - only accepts unique elements
+        HashSet<String> numbers = new HashSet<>();
+        //Iterate over the arrays
+        for (String element : arr) {
+            if (!numbers.add(element)) {
+                return false;
+            };
+        }
+        //All elements are unique
+        return true;
+
     }
 
     //------------------- SET ----------------------------

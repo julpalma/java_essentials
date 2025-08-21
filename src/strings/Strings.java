@@ -16,11 +16,20 @@ public class Strings {
         }
     }
 
-    public static void reversedString(String text) {
+    public static void reverseString(String text) {
         for(int i = text.length()-1; i>=0; i--){
             //CharAt returns the character at the specified index
             System.out.println(text.charAt(i));
         }
+    }
+
+    public static String reverseStringWithStringBuilder(String text) {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < text.length(); i++) {
+            stringBuilder.append(text.charAt(i));
+            stringBuilder.reverse();
+        }
+        return stringBuilder.toString();
     }
 
     public static void toLowerCase(String text) {
@@ -31,6 +40,9 @@ public class Strings {
         if (text.matches("[a-zA-Z0-9]*")) {
             System.out.println("Your text does not contain special characters");
         }
+
+        System.out.println("Your text contains special characters");
+
     }
 
     public static void isLetterFound(String text) {
@@ -45,6 +57,7 @@ public class Strings {
             }
         }
 
+        System.out.println("Letter found: "+ letterFound);
     }
 
 
