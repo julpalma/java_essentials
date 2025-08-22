@@ -4,8 +4,6 @@ import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class ReadFile {
@@ -17,7 +15,6 @@ public class ReadFile {
             conn.setRequestMethod("GET");
 
             BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-            List<String[]> rows = new ArrayList<>();
             String line;
             System.out.print("File is " + in.readLine());
 
