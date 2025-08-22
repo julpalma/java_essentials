@@ -43,7 +43,6 @@ public class ReadFile {
             scanner.close();
         } catch (FileNotFoundException e) {
             System.err.println("Error while reading a file from path " + path);
-            throw new RuntimeException(e);
         }
 
     }
