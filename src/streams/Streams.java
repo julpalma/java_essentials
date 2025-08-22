@@ -139,6 +139,13 @@ public class Streams {
 
         System.out.println("List of scores higher than 75 is: " + newlist);
 
+        //Find how many students there is with score 90
+        List<Map.Entry<Integer, Integer>> studentsWithScore90 = schoolScores.entrySet().stream()
+                .filter(s -> s.getValue() == 90)
+                .toList();
+
+        System.out.println("The number of students with score 90 is " + studentsWithScore90.size());
+
     }
 
 }

@@ -12,7 +12,7 @@ import streams.Streams;
 import strings.Strings;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         System.out.println("Hello and welcome!!!!");
 
@@ -117,6 +117,10 @@ public class Main {
         Strings.isLetterFound(text);
 
 
+        // -------- READ FILE --------
+
+        String path = "src/File";
+        ReadFile.readFileFromPath(path);
 
 
 
