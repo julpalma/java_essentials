@@ -142,11 +142,11 @@ public class DataStructures {
         return stackOfFruits;
     }
 
-    public static void queueOperations(String fruit) {
+    public static void queueOperations() {
         Queue<String> queueOfFruits = addToTheQueue();
 
         //It removes the first element of the queue. Apple
-        var fruitRemoved = queueOfFruits.remove();
+        queueOfFruits.remove();
         System.out.println("Removed element. Elements in the queue now are " + queueOfFruits);
 
         //It returns the head of the queue and does not remove it
@@ -154,11 +154,11 @@ public class DataStructures {
         System.out.println("Element in the head of the queue is " + headOfQueue);
     }
 
-    public static void stackOperations(String fruit) {
+    public static void stackOperations() {
         Stack<String> stackOfFruits = addToTheStack();
 
         //It removes the element at the top of the stack.
-        var fruitRemoved = stackOfFruits.pop();
+        stackOfFruits.pop();
         System.out.println("Removed element. Elements in the stack now are" + stackOfFruits);
 
         //It returns the head of the queue and does not remove it

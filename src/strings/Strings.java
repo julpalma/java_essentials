@@ -8,7 +8,7 @@ public class Strings {
     public static void countWords(String text) {
         String[] words = text.split(" ");
         int numberOfWords = words.length;
-        String message = String.format("Your text contains %d", numberOfWords, " words");
+        String message = String.format("Your text contains %d words", numberOfWords);
         System.out.println(message);
 
         for (String word : words) {

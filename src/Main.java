@@ -149,8 +149,8 @@ public class Main {
         System.out.println("QUEUE AND STACK!!!!");
         System.out.println("---------------------------");
 
-        DataStructures.queueOperations("apple");
-        DataStructures.stackOperations("apple");
+        DataStructures.queueOperations();
+        DataStructures.stackOperations();
 
         // MAP
 
