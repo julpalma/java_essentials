@@ -47,6 +47,17 @@ This small project has examples of:
   Enhanced for loop
   forEach and lambdas
 
+                   Iterable
+                      |
+                      |
+                  Collections
+              /       |         \
+             /        |          \
+           List     Queue        Set
+            |         |           |
+            |         |           |
+        ArrayList PriorityQueue HashSet
+
 10. **Streams:**
   Streams API Allows you to perform operations on the data without modifying the original source
   Intermediate operations perform the operation and return the resulting stream

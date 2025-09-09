@@ -8,7 +8,7 @@ public class Strings {
     public static void countWords(String text) {
         String[] words = text.split(" ");
         int numberOfWords = words.length;
-        String message = String.format("Your text contains %d", numberOfWords);
+        String message = String.format("Your text contains %d", numberOfWords, " words");
         System.out.println(message);
 
         for (String word : words) {
@@ -19,6 +19,7 @@ public class Strings {
     public static void reverseString(String text) {
         for(int i = text.length()-1; i>=0; i--){
             //CharAt returns the character at the specified index
+            System.out.println("Reverse string");
             System.out.println(text.charAt(i));
         }
     }
@@ -29,11 +30,12 @@ public class Strings {
             stringBuilder.append(text.charAt(i));
             stringBuilder.reverse();
         }
+        System.out.println("Reverse string with String Builder");
         System.out.println(stringBuilder);
     }
 
     public static void toLowerCase(String text) {
-        System.out.println("Lower case %d" + text.toLowerCase());
+        System.out.println("Lower case: " + text.toLowerCase());
     }
 
     public static void hasSpecialChars(String text) {

@@ -1,5 +1,9 @@
 package polymorphism;
 
+//The ability for an object or function to take many different forms.
+//It helps reduce complexity and write reusable code.
+//Java supports runtime and compile-time polymorphism.
+
 public class Animal {
 
     public void makeSound() {

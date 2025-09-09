@@ -9,8 +9,8 @@ public abstract class Shape {
 
     public abstract double calculateArea();
 
-    public void print() {
-        System.out.println("I am a shape");
+    public void print(Shape s) {
+        System.out.println("I am a shape" + s.toString());
     }
 
 }

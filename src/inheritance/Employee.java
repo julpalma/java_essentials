@@ -42,4 +42,10 @@ public class Employee extends Person {
         this.title = title;
     }
 
+    @Override
+    public String toString() {
+        return "Employee{" + "employeeId=" + employeeId + ", salary=" + salary + ", title= " + title +
+                ", name=" + super.getName() + ",age= " + super.getAge() + ", gender= " + super.getGender() + ", address= " + super.getAddress() +
+                ", phone= " + super.getPhone();
+    }
 }

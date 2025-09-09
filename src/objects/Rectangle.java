@@ -18,11 +18,6 @@ public class Rectangle {
 
     // Constructor: Initializes a field or fields in a project. Default constructor may have no values. It is always defined implicit.
 
-    public Rectangle() {
-        length = 0;
-        width = 0;
-    }
-
     public Rectangle(double length, double width) {
         setLength(length);
         setWidth(width);

@@ -10,7 +10,7 @@ public class Streams {
     // Intermediate operations perform the operation and return the resulting stream
     // Terminal operations perform the operation and return a result and close the stream.
 
-    public void createStreamAndPerformOperations() {
+    public static void createStreamAndPerformOperations() {
 
         List<String> vegetables = new ArrayList<>();
         // populate the list
@@ -38,7 +38,7 @@ public class Streams {
         vegetables.stream().sorted().forEach(System.out::println);
 
         Optional<String> foundFirstInThelist = vegetables.stream().findFirst();
-        foundFirstInThelist.ifPresent(v -> System.out.println("Found first element in the list." + foundFirstInThelist));
+        foundFirstInThelist.ifPresent(v -> System.out.println("Found first element in the list." + foundFirstInThelist.get()));
 
         Set<String> temp = new HashSet<>();
         Set<String> duplicates = new HashSet<>();
@@ -47,7 +47,7 @@ public class Streams {
 
     }
 
-    public void setOfVegetables(List<String> vegetables) {
+    public static void setOfVegetables(List<String> vegetables) {
         vegetables.add("tomato");
         vegetables.add("carrot");
         vegetables.add("broccoli");
@@ -56,41 +56,65 @@ public class Streams {
         System.out.println("Number of elements in set of vegetables is " + vegetables.size());
     }
 
+    public static List<Integer> createListOfNumbers() {
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(5);
+        numbers.add(55);
+        numbers.add(2);
+        numbers.add(85);
+        numbers.add(7);
+        numbers.add(1);
+        numbers.add(10);
+        numbers.add(35);
 
-    public static void findEvenAndOddNumbersInTheList(List<Integer> nums) {
+        return numbers;
+    }
+
+
+    public static void findEvenAndOddNumbersInTheList() {
+        List<Integer> numbers = createListOfNumbers();
         List<Integer> evenNumbers = new ArrayList<>();
         List<Integer> oddNumbers = new ArrayList<>();
 
-        nums.stream().filter(num -> num % 2 == 0).forEach(evenNumbers::add);
+        numbers.stream().filter(num -> num % 2 == 0).forEach(evenNumbers::add);
         System.out.println("Even numbers: " + evenNumbers);
 
-        nums.stream().filter(num -> num % 2 != 0).forEach(oddNumbers::add);
+        numbers.stream().filter(num -> num % 2 != 0).forEach(oddNumbers::add);
         System.out.println("Odd numbers: " + oddNumbers);
     }
 
-    public static List<Integer> findAllElemensStartingWith5(List<Integer> nums) {
+    public static List<Integer> findAllElemensStartingWith5() {
+        List<Integer> numbers = createListOfNumbers();
+
         List<Integer> numsStartWith5 = new ArrayList<>();
-        nums.stream().filter(num -> num.toString().startsWith("5")).forEach(numsStartWith5::add);
+        numbers.stream().filter(num -> num.toString().startsWith("5")).forEach(numsStartWith5::add);
         return numsStartWith5;
     }
 
-    public static void findMaxAndMinElements(List<Integer> nums) {
-        Optional<Integer> max = nums.stream().max(Integer::compareTo);
-        Optional<Integer> min = nums.stream().min(Integer::compareTo);
+    public static void findMaxAndMinElements() {
+        List<Integer> numbers = createListOfNumbers();
+
+        Optional<Integer> max = numbers.stream().max(Integer::compareTo);
+        Optional<Integer> min = numbers.stream().min(Integer::compareTo);
         max.ifPresent(integer -> System.out.println("Max: " + integer));
         min.ifPresent(integer -> System.out.println("Min: " + integer));
     }
 
-    public static List<Integer> sortElements(List<Integer> nums) {
+    public static List<Integer> sortElements() {
+        List<Integer> numbers = createListOfNumbers();
+
         //Ascending order
-        return nums.stream().sorted().toList();
+        return numbers.stream().sorted().toList();
     }
 
-    public static List<Integer> sortElementsInDescendingOrder(List<Integer> nums) {
-        return nums.stream().sorted(Comparator.reverseOrder()).toList();
+    public static List<Integer> sortElementsInDescendingOrder() {
+        List<Integer> numbers = createListOfNumbers();
+
+        return numbers.stream().sorted(Comparator.reverseOrder()).toList();
     }
 
-    public static void duplicatesInArray(int[] arr1) {
+    public static void duplicatesInArray() {
+        int[] arr1 = {1, 2, 3, 5, 8, 10, 1, 3, 1};
         if (Arrays.stream(arr1).distinct().count() != arr1.length) {
             System.out.println("Array contains duplicate elements");
         } else {
@@ -98,17 +122,18 @@ public class Streams {
         }
     }
 
-    public static List<Integer> performSquareOfValuesFromList(List<Integer> nums) {
-        return nums.stream().map(num -> num*num).collect(Collectors.toList());
+    public static List<Integer> performSquareOfValuesFromList() {
+        List<Integer> numbers = createListOfNumbers();
+        return numbers.stream().map(num -> num*num).collect(Collectors.toList());
     }
 
-    public static List<Integer> convertListOfStringsInInteger (List<String> listOfStrings) {
+    public static List<Integer> convertListOfStringsInInteger(List<String> listOfStrings) {
         //To return a list of Integers
         return listOfStrings.stream().map(Integer::valueOf).toList();
 
     }
 
-    public void createNewMap() {
+    public static void createNewMap() {
 
         Map<Integer, Integer> schoolScores = new HashMap<>();
         schoolScores.put(1, 80);
