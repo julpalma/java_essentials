@@ -215,10 +215,10 @@ public class DataStructures {
         System.out.println("Print set of a map entries " + mapEntries);
 
         Set<String> mapKeys = fruitCalories.keySet();
-        System.out.println("Print set of a keys from a map " + mapEntries);
+        System.out.println("Print set of a keys from a map " + mapKeys);
 
         Collection<Integer> mapValues = fruitCalories.values();
-        System.out.println("Print set of a values from a map " + mapEntries);
+        System.out.println("Print set of a values from a map " + mapValues);
     }
 
     // Map operations
